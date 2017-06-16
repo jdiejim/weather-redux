@@ -11,3 +11,8 @@ td {
 svg {
   height: 150px;
 }
+
+.map {
+  width: 250px;
+  height: 200px;
+}

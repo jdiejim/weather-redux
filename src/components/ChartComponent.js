@@ -10,7 +10,7 @@ const ChartComponent = (props) => {
         <SparklinesLine color={color} />
         <SparklinesReferenceLine type="mean" />
       </Sparklines>
-      <div>{`${average(data)}${units}`}</div>
+      <div>{`${average(data)} ${units}`}</div>
     </div>
   )
 }

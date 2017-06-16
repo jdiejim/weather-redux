@@ -11,7 +11,7 @@ class WeatherList extends Component {
       const temp = e.list.map(t => t.main.temp - 273.15);
       const pressure = e.list.map(t => t.main.pressure);
       const humidity = e.list.map(t => t.main.humidity);
-      console.log(e.city.coord.lat);
+      
       return (
       <tr key={city}>
         <td><GoogleMap lat={lat} lng={lon} /></td>

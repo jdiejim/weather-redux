@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators, dispatch } from 'redux';
-import { searchCity } from '../actions/index';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -20,8 +18,6 @@ class SearchBar extends Component {
   }
 
   render() {
-    const { search } = this.props;
-
     return (
       <form
         onSubmit={this.onFormSubmit.bind(this)}
@@ -45,10 +41,4 @@ class SearchBar extends Component {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ search: searchCity }, dispatch);
-}
-
-const connectComponent = connect(mapDispatchToProps);
-
-export default connectComponent(SearchBar);
+export default SearchBar;
